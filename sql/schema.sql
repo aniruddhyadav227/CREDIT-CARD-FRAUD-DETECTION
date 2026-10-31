@@ -1,0 +1,9 @@
+CREATE TABLE predictions (
+    id SERIAL PRIMARY KEY,
+    amount DECIMAL NOT NULL,
+    time DECIMAL NOT NULL,
+    v1 DECIMAL NOT NULL,
+    v2 DECIMAL NOT NULL,
+    is_fraud BOOLEAN NOT NULL,
+    prediction_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
